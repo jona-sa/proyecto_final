@@ -1,0 +1,163 @@
+/*QUE NO SE ROMPA !!!! */
+
+* {
+    font-family: "Montserrat";
+    Margin:0;
+    padding:0;
+    list-style: none;
+}
+
+/*ESTILOS EN TODAS LAS PAGINAS */
+
+body{
+    background-image: linear-gradient(to right, green , grey);
+}
+
+a {
+    text-decoration:none
+}
+.titulo{
+    background-color: rgb(70, 69, 69);
+    color: rgb(3, 68, 14);
+    font-weight: bold;
+    text-align: center;
+    text-justify: center;
+    text-transform: uppercase;
+}
+
+.menu {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(27, 26, 26, 0.747);
+    list-style: none;
+    font-size: 0;
+    text-decoration: none;
+    border:solid 1px green;
+    z-index: 1;
+}
+
+
+.menu li {
+    display: inline-block;
+    width: 16.6%;
+    position: relative;
+    font-size: 14px;
+    color: rgb(22, 185, 44);
+    text-align: center;
+}
+
+.menu li:hover{
+    transform: scale(0.8,0.8);
+    background-color: rgba(27, 26, 26, 0.884);
+    border-bottom: 3px solid green;
+}
+
+.menu ul {
+    background-color: rgba(27, 26, 26, 0.747);
+    position: absolute;
+    display: none;
+}
+
+.menu ul li{
+    display: block;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.menu a {
+    color: rgb(22, 185, 44);
+}
+
+footer {
+    display:flex;
+    justify-content: space-around;
+    color: rgb(30, 189, 96);
+    font-family: "Arimo";
+    background-color: rgb(131, 130, 130);
+    .footer__titulos{
+        text-decoration: underline;
+    }
+    .footer__items{
+        text-decoration: none;
+        font-style: italic;
+    }
+}
+
+/*ESTILOS EN PAGINA PRODUCTOS */
+
+.menuCategorias{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    .menuCategorias__imagen{
+        width: 20vw;  
+        height: 20vh;
+        margin:10px 10px 10px 10px;
+        padding: 10px 10px 10px 10px;
+    }
+    .menuCategorias__nombreCategoria{
+        font-weight: bold;
+    }
+}
+
+/*ESTILOS EN PAGINA INDEX */
+
+.contenedor_index {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "nav nav nav"
+      "info_carrousel info_carrousel info_carrousel"
+      "info_banner info_banner info_banner"
+      "footer footer footer";
+    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-columns: 20% auto 15%;
+}
+
+.contenedor_index header {
+    grid-area: header;
+    justify-self: stretch;
+    align-self: stretch;    
+ }
+.contenedor_index footer {
+    display:flex;
+    grid-area: footer;
+    background-color: rgba(27, 26, 26, 0.747);
+    justify-content: space-evenly;
+    list-style: none;
+ }
+
+.contenedor_index section#info_carrousel {
+    grid-area: info_carrousel;
+ }
+ .contenedor_index section#info_banner {
+    grid-area: info_banner;     
+ }
+ .contenedor_index nav {
+    grid-area: nav;
+ }
+
+ /*ESTILOS EN PAGINA RECETAS */
+
+ .tabla_recetas {
+    width: 100%;
+    .tabla_recetas__contenido{
+        text-align: center;
+    }
+}
+
+ /*ESTILOS EN PAGINA CONTACTO */
+
+.formulario{
+    margin-left: 1em;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    .formulario__etiquetas{
+        font-weight: bold;
+    }
+}
